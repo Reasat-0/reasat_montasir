@@ -1,0 +1,7 @@
+@mixin custom_nav_item_container{
+    display: flex;
+    .li{
+        list-style: none;
+        
+    }
+}

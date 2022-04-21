@@ -1,0 +1,33 @@
+
+.footer{
+    padding: 40px 90px;
+    background-color: $theme_close_focus_blue_darker;
+    .footer-cols{
+        padding: 15px;
+        h4{
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .footer-nav{
+            padding-left: 0;
+            .footer-nav-item{
+                color :white;
+                list-style: none;
+                padding: 8px 4px;
+                i{
+                    color :white;
+                    margin-right: 10px;
+                }
+            }
+        }
+        &.social-col{
+            .footer-nav{
+                display: flex;
+            }
+        }
+    }
+
+}

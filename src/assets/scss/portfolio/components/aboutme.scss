@@ -1,0 +1,75 @@
+.about-me-section{
+    .section-heading{
+        color: $primary_blue;
+        font-size: 48px;
+    }
+    .about-left-col{
+        padding: 30px 50px 50px 20px;
+        .about-img-holder{
+            box-shadow: inset(4px 4px 4px);
+            img{
+                max-width: 100%;
+                border-radius: 50%;
+            }
+        }
+    }
+    .about-right-col{
+        .about-info-text{
+            padding: 30px 30px 10px 0px;
+        }
+        .about-icon-row{
+            .followed-principles-col{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 10px;
+                border-left: 4px solid $theme_blue;
+                border-radius: 8px;
+                .icon-wrapper{
+                    flex:0 0 25px;
+                    max-width: 25px;
+                    margin: 0 8px 0 0;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                .icon-text{
+                    flex: 0 0 calc(100% - 25px);
+                    max-width: calc(100% - 25px);
+                    margin-bottom: 0px;
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+            }
+        }
+        .about-btn-holder{
+            margin-top:20px;
+            display: flex;
+            button{
+                background: white;
+                color: $theme_blue;
+                font-weight: 600;
+                border-radius: 50px;
+                border: 2px solid $theme_blue;
+                padding: 10px 28px;
+                text-transform: uppercase;
+                &:first-child{
+                    margin-right:5px;
+                    background : $theme_close_focus_blue;
+                    color: #fff;
+                    border: none;
+                    i{
+                        margin-right: 5px;
+                        color: #fff;
+                        font-size:32px;
+                    }
+                }
+                &:last-child{
+                    margin-left:5px;
+                }
+            }
+        }
+    }
+}
