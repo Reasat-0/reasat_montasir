@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/reasat_montasir/static/css/main.612178e0.css",
+    "main.js": "/reasat_montasir/static/js/main.68bea419.js",
+    "static/js/787.1ed0c42c.chunk.js": "/reasat_montasir/static/js/787.1ed0c42c.chunk.js",
+    "static/media/apatoto.png": "/reasat_montasir/static/media/apatoto.61ce471e4ac393397fc4.png",
+    "static/media/about.jpg": "/reasat_montasir/static/media/about.452d216818d12f05f497.jpg",
+    "static/media/reasat_logo.png": "/reasat_montasir/static/media/reasat_logo.d7fa52febaeeef700b62.png",
+    "static/media/comfortable.png": "/reasat_montasir/static/media/comfortable.335d983b423b5ee56604.png",
+    "static/media/focus.png": "/reasat_montasir/static/media/focus.51b22c122b82dc9204b3.png",
+    "static/media/ux.png": "/reasat_montasir/static/media/ux.99b82cd8c51b6d637b4d.png",
+    "static/media/fast.png": "/reasat_montasir/static/media/fast.ef10817d78db31e857d0.png",
+    "static/media/idea.png": "/reasat_montasir/static/media/idea.3fbdc89a730230405bc4.png",
+    "static/media/hierarchy.png": "/reasat_montasir/static/media/hierarchy.79a92a1f1739e61c4b54.png",
+    "static/media/simplicity.png": "/reasat_montasir/static/media/simplicity.73cd3c3f7d75263f1127.png",
+    "index.html": "/reasat_montasir/index.html",
+    "main.612178e0.css.map": "/reasat_montasir/static/css/main.612178e0.css.map",
+    "main.68bea419.js.map": "/reasat_montasir/static/js/main.68bea419.js.map",
+    "787.1ed0c42c.chunk.js.map": "/reasat_montasir/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.612178e0.css",
+    "static/js/main.68bea419.js"
+  ]
+}
