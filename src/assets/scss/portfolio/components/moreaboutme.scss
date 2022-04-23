@@ -90,6 +90,30 @@
                             line-height: 1.8;
                         }
                     }
+                    &.expertise{
+                        padding-top:20px;
+                        border-bottom: none;
+                        .skills-card{
+                            margin-bottom: 20px;
+                            box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+                            border-radius: 5px;
+                            .card-body{
+                                .expertise-img-wrapper{
+                                    text-align: center;
+                                    img{
+                                        max-width: 100%;
+                                        border: 1px solid $theme_blue_sub_title_lightest;
+                                        // max-height: 70px;
+                                    }
+                                }
+                                .expertise-name{
+                                    font-weight: 700;
+                                    margin-top: 10px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

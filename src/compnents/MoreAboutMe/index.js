@@ -5,9 +5,18 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-
-
 import CustomTabContent from './CustomTabContent';
+
+
+
+import htmlLogo from '../../assets/img/skill_logos/html.png'
+import cssLogo from '../../assets/img/skill_logos/css.png'
+import jsLogo from '../../assets/img/skill_logos/js.png'
+import bootstrapLogo from '../../assets/img/skill_logos/bootstrap.png'
+import figmaLogo from '../../assets/img/skill_logos/figma.png'
+import jqueryLogo from '../../assets/img/skill_logos/jquery.png'
+import reactLogo from '../../assets/img/skill_logos/react.png'
+import wordpressLogo from '../../assets/img/skill_logos/wordpress.png'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -86,9 +95,51 @@ function TabPanel(props) {
             logo: 'fa-laptop-code',
             year: '2019 - 2020',
             degree: 'Internship(Web Development)',
-            institution: "Hazi Mohammed Mohsin College",
+            institution: "ASCII System Ltd.",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         }
+    ],
+    expertise : [
+      {
+        id: 0,
+        logo: htmlLogo,
+        name : 'HTML5'
+      },
+      {
+        id: 1,
+        logo: cssLogo,
+        name : 'CSS'
+      },
+      {
+        id: 2,
+        logo: jsLogo,
+        name : 'Javascript'
+      },
+      {
+        id: 3,
+        logo: bootstrapLogo,
+        name : 'Bootstrap'
+      },
+      {
+        id: 4,
+        logo: jqueryLogo,
+        name : 'Jquery'
+      },
+      {
+        id: 5,
+        logo: reactLogo,
+        name : 'React & Redux'
+      },
+      {
+        id: 6,
+        logo: figmaLogo,
+        name : 'Figma'
+      },
+      {
+        id: 7,
+        logo: wordpressLogo,
+        name : 'WordPress & PHP'
+      }
     ]
 }
 export default function MoreAboutMe(){
@@ -117,8 +168,8 @@ export default function MoreAboutMe(){
                     sx={{ }}
                     >
                     <Tab label="Education" {...tabMenuProps(0)} />
-                    <Tab label="Expertise" {...tabMenuProps(1)} />
-                    <Tab label="Experience" {...tabMenuProps(2)} />
+                    <Tab label="Experience" {...tabMenuProps(1)} />
+                    <Tab label="Expertise" {...tabMenuProps(2)} />
                     </Tabs>
                     <TabPanel value={value} index={0} className='more-about-tabs-panel'>
                         <CustomTabContent tabTitle="Education" contents={moreAboutInfo['education']}/>
@@ -127,7 +178,7 @@ export default function MoreAboutMe(){
                         <CustomTabContent tabTitle="Experience" contents={moreAboutInfo['experience']}/>
                     </TabPanel>
                     <TabPanel value={value} index={2} className='more-about-tabs-panel'>
-                        {/* <CustomTabContent tabTitle="Experience"/> */}
+                        <CustomTabContent tabTitle="A Few Technologies I've Been Working On" contents={moreAboutInfo['expertise']}/>
                     </TabPanel>
                 </Box>
             </Container>
