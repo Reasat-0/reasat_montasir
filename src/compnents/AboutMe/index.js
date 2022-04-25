@@ -10,7 +10,7 @@ import comfortable from '../../assets/img/about/comfortable.png';
 import simplicity from '../../assets/img/about/simplicity.png';
 const AboutMe = () => {
     return(
-        <section className="about-me-section">
+        <section className="about-me-section" id="about">
             <Container>
                 <Row>
                     <Col md={12}>

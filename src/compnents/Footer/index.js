@@ -1,5 +1,6 @@
 
 import { Row, Col } from 'reactstrap';
+import { Link } from "react-router-dom";
 // import {link} from 'react-router-dom'
 const Footer = () => {
     return (
@@ -32,11 +33,13 @@ const Footer = () => {
                     <ul className='footer-nav'>
                         <li className='footer-nav-item'> 
                             <i className="fas fa-angle-double-right mr-2"></i> 
-                            Home 
+                            {/* <Link to={{ pathname: 'facebook.com'}}>Home</Link>  */}
+                            Home
                         </li>
                         <li className='footer-nav-item'> 
                             <i className="fas fa-angle-double-right mr-2"></i> 
-                            About 
+                            {/* <Link to="/invoices">About</Link>  */}
+                            About
                         </li>
                         <li className='footer-nav-item'> 
                             <i className="fas fa-angle-double-right mr-2"></i> 

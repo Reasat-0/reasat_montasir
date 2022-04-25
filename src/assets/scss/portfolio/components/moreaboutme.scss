@@ -47,7 +47,7 @@
                 }
                 .tab-content{
                     display: flex;
-                    margin-bottom: 50px;
+                    margin-bottom: 30px;
                     border-bottom: 1px solid $theme_blue_sub_title_lightest;
                     .tab-content-icon-holder{
                         background: $theme_blue_sub_title;
@@ -75,7 +75,7 @@
                         .degree{
                             font-weight: 800;
                             font-size: 27px;
-                            margin-top: 15px;
+                            margin-top: 10px;
                         }
                         .institution{
                             font-weight: 800;
@@ -86,7 +86,7 @@
                             font-size: 15px;
                             font-weight: 600;
                             margin-top:14px;
-                            margin-bottom: 40px;
+                            margin-bottom: 25px;
                             line-height: 1.8;
                         }
                     }

@@ -2,6 +2,9 @@
 .custom-nav-main{
     min-height: 70;
     border-bottom: 1px solid #a2bdff78;
+    &.colored{
+        background: white;
+    }
     .custom-nav-container{
         display: flex;
         max-width: 90%;
@@ -31,8 +34,15 @@
                     a{
                         padding: 3px 5px;
                         text-decoration: none;
-                        font-weight: 600;
-                        color: rgb(139, 105, 86);
+                        font-weight: 700;
+                        color: $primary_blue;
+                        letter-spacing: 1px;
+                        cursor: pointer;
+                    }
+                    &.active{
+                        a{
+                            color: $primary_gold_vibe;
+                        }
                     }
                 }
             }

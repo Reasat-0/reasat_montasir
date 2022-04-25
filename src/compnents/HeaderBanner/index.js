@@ -3,7 +3,7 @@ import {Row, Col, Button, Container} from 'reactstrap'
 import headerBannerImg from '../../assets/img/apatoto.png'
 const HeaderBanner = () => {
     return(
-        <section className="header-banner-section">
+        <section className="header-banner-section" id="home">
             <div className='header-banner-overlay'></div>
             <Container>
                 <Row>
