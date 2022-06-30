@@ -39,7 +39,7 @@
             max-width: 80%;
             .tab-content-wrapper{
                 .tab-title{
-                    color: $theme_blue_sub_title;
+                    color: $theme_blue_icon;
                     font-size: 32px;
                     font-weight: 800;
                     letter-spacing: 1.6px;
@@ -50,25 +50,25 @@
                     margin-bottom: 30px;
                     border-bottom: 1px solid $theme_blue_sub_title_lightest;
                     .tab-content-icon-holder{
-                        background: $theme_blue_sub_title;
+                        background: $theme_blue_sub_title_lightest;
                         flex: 0 0 60px;
                         max-width: 60px;
                         text-align: center;
                         border-radius: 50%;
-                        padding: 13px;
                         max-height: 60px;
                         align-items: center;
                         display: flex;
+                        justify-content: center;
                         i{
-                            font-size: 30px;
-                            color: #ffffff;
+                            font-size: 34px;
+                            color: $theme_blue_icon;
                         }
                     }
                     .tab-content-des{
                         padding-right:20px;
                         padding-left: 20px;
                         .year{
-                            color : $theme_blue_sub_title;
+                            color : $theme_blue_icon;
                             font-weight: 800;
                             font-size: 18px;
                         }

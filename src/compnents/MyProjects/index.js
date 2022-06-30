@@ -45,8 +45,17 @@ const MyProjects = () => {
             <Container>
                 <Row>
                     <Col md={12} className="mb-5">
-                        <h1 className="section-heading text-center mb-2"> Projects </h1>
-                        <h4 className="section-sub-heading mt-2 text-center"> Here is a glimpse of something I've already built </h4>
+                        <h1 
+                            className="section-heading text-center mb-2"
+                            data-aos="fade-up"
+                            data-aos-duration="3000"
+                            data-aos-once="true" 
+                        > Projects </h1>
+                        <h4 className="section-sub-heading mt-2 text-center"
+                            data-aos="fade-up"
+                            data-aos-duration="3000"
+                            data-aos-once="true" 
+                        > Here is a glimpse of something I've already built </h4>
                     </Col>
                     {
                         myProjects.map( (item,i) => 

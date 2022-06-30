@@ -7,10 +7,18 @@ import MyProjects from '../MyProjects';
 import Footer from '../Footer';
 
 
+import {useEffect} from 'react'
+import AOS from 'aos';
+
+
 const Home = () => {
+    useEffect(()=>{
+        AOS.init({
+        });
+      },[])
     return (
         <>
-            <CustomNav/>
+            <CustomNav />
             <HeaderBanner/>
             <AboutMe/>
             <MoreAboutMe/>

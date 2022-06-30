@@ -166,13 +166,23 @@ export default function MoreAboutMe(){
                     aria-label="Vertical tabs example"
                     className='more-about-tabs-menu'
                     sx={{ }}
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    data-aos-once="true" 
                     >
                     <Tab label="Education" {...tabMenuProps(0)} />
                     <Tab label="Experience" {...tabMenuProps(1)} />
                     <Tab label="Expertise" {...tabMenuProps(2)} />
                     </Tabs>
-                    <TabPanel value={value} index={0} className='more-about-tabs-panel'>
-                        <CustomTabContent tabTitle="Education" contents={moreAboutInfo['education']}/>
+                    <TabPanel value={value} index={0} className='more-about-tabs-panel'
+                              data-aos="fade-up"
+                              data-aos-duration="3000"
+                              data-aos-once="true" >
+                        <CustomTabContent 
+                          tabTitle="Education" 
+                          contents={moreAboutInfo['education']}
+                               
+                        />
                     </TabPanel>
                     <TabPanel value={value} index={1} className='more-about-tabs-panel'>
                         <CustomTabContent tabTitle="Experience" contents={moreAboutInfo['experience']}/>

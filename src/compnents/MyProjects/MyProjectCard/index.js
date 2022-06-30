@@ -2,10 +2,13 @@ import {Button} from 'reactstrap'
 
 const MyProjectCard = ({project}) => {
     const {id, name, tagline, subname, featured, technology, description, image,url} = project
-    console.log(project)
     return(
         <div className={ `my-project-container ${ ( parseInt(id) % 2 === 0 ) ? "" : "mirror-it" }`}>
-            <div className="my-project-img-section">
+            <div className="my-project-img-section"
+                            data-aos={( parseInt(id) % 2 === 0 ) ? "fade-right" : "fade-left"}
+                            data-aos-duration="3000"
+                            data-aos-once="true"             
+            >
                 <div className="projects-img-container">
                     <div className="projects-img-content">
                         <h3 className="project-img-title"> {subname} </h3>
@@ -37,16 +40,25 @@ const MyProjectCard = ({project}) => {
                     {
                         featured 
                         && 
-                        <p className="featured-project"> Featured Project </p>
+                        <p className="featured-project"
+                            data-aos={( parseInt(id) % 2 === 0 ) ? "fade-left" : "fade-right"}
+                            data-aos-duration="3000"
+                            data-aos-once="true" > Featured Project </p>
                     }
                     <h3 className="project-title"> {name} </h3>
-                    <p className="project-description"> 
+                    <p className="project-description"
+                    data-aos={( parseInt(id) % 2 === 0 ) ? "fade-left" : "fade-right"}
+                    data-aos-duration="3000"
+                    data-aos-once="true" > 
                         {description}
                     </p>
                     <ul className="project-tech-used">
                         {
                             technology.map( (technology,i) => 
-                                <li key={i}> {technology} </li>
+                                <li key={i}
+                                data-aos={( parseInt(id) % 2 === 0 ) ? "fade-left" : "fade-right"}
+                                data-aos-duration="3000"
+                                data-aos-once="true" > {technology} </li>
                             )
                         }
                     </ul>

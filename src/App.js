@@ -1,7 +1,13 @@
 import Home from './compnents/Home'
 
 
+
+
+
+
 function App() {
+
+
   return (
     <div className="App">
       <Home/>

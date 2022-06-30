@@ -56,11 +56,11 @@ const Footer = () => {
                     <ul className='footer-nav'>
                         <li className='footer-nav-item'> 
                             <i className="fas fa-map-marker-alt"></i>
-                            Abu Dhabi, United Arab Emirates
+                            Ambia Bhaban, House-203, Moulovi Purkur Paar, Chandgaon, Chattogram
                         </li>
                         <li className='footer-nav-item'> 
                             <i className="fas fa-phone-alt"></i>
-                            +971-522709052 
+                            +880-1521484206 
                         </li>
                         <li className='footer-nav-item'> 
                             <i className="fas fa-envelope-open"></i>

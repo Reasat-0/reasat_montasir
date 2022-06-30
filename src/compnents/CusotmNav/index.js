@@ -9,8 +9,6 @@ const CustomNav = () => {
 
     useEffect( () => {
         window.addEventListener("scroll", changeNavbarColor)
-
-        console.log("use effect called")
     })
 
 
@@ -40,7 +38,7 @@ const CustomNav = () => {
             <Navbar
                 expand="md"
                 className={`fixed-top custom-nav-main ${navbar_color}`}
-                onClick={changeNavbarColor}    
+                onClick={changeNavbarColor}
             >
                 <Container className="custom-nav-container">
                     <NavbarBrand>
