@@ -3,73 +3,40 @@ import {Row, Col, Button, Container} from 'reactstrap'
 import headerBannerImg from '../../assets/img/apatoto.png'
 
 import {useState, useEffect} from 'react'
+import TypeAnimation from 'react-type-animation';
 
+
+import Typed from 'react-typed';
 
 const HeaderBanner = () => {
 
-    const [typingContents, setTypingContents] = useState({
-        text: '',
-        isDeleting: false,
-        loopNum: 0,
-        typingSpeed: 150
-    })
+    // const typingTexts = [
+    //     'Frontend Developer',
+    //     'React Developer',
+    //     'Web UI/UX Designer',
+    //     'Wireframe Maker'
+    // ]
 
-    const [letter_iteration, setLetterIteration] = useState(0)
-    const [text, setText] = useState('')
-
-    const typingTexts = [
-        'Frontend Developer',
-        'React Developer',
-        'Web UI/UX Designer',
-        'Wireframe Maker'
-    ]
+    const designations = 
+        [
+            'Frontend Developer',
+            1000,
+            'React Developer',
+            1000,
+            'Web UI/UX Designer',
+            1000,
+            'Wirframe/Prototype maker',
+            1000
+          ]
+          const type_texts = 
+          [
+              'Frontend Developer',
+              'React Developer',
+              'Web UI/UX Designer',
+              'Wirframe/Prototype maker'
+            ]
     
-    useEffect(()=>{
-        handleType();
-    },[])
-
-    useEffect(()=>{
-        console.log(text)
-    },[letter_iteration, text])
     
-    const  handleType = () => {
-        const { isDeleting, loopNum, text, typingSpeed } = typingContents;
-        // const i = loopNum % typingTexts.length;
-        // const fullText = typingTexts[i];
-
-        // setTypingContents((prev) => {
-        //     ...prev,
-        //     letter_iteration : prev.letter_iteration + 1
-        // })
-
-        setLetterIteration( (c) => c + 1 )
-
-        
-
-        
-        setText('He6 df dd d dfasfd'.substring(0, letter_iteration))
-
-
-
-        // setTypingContents({
-        //     text : isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0 , text.length + 1 ),
-        //     typingSpeed : isDeleting ? 50 : 150
-        // })
-        
-    
-        // if (!isDeleting && text === fullText) {     
-        //   setTimeout(() => this.setState({ isDeleting: true }), 500);   
-        // } else if (isDeleting && text === '') {
-        //   this.setState({
-        //     isDeleting: false,
-        //     loopNum: loopNum + 1
-        //   });      
-        // }
-    
-        setTimeout(handleType, 1500);
-
-        // console.log(typingContents)
-      };
       
     return(
         <section className="header-banner-section" id="home">
@@ -95,10 +62,31 @@ const HeaderBanner = () => {
                             data-aos-duration="3000"
                             
                             > This is  <span> Md Reasat Montasir Chowdhury </span></h1>
-                        <h4 
+                        {/* <h4 
                         data-aos="fade-right"
                         data-aos-duration="3000"
-                        className='header-banner-designation'> {typingContents.text} </h4>
+                        className='header-banner-designation'> {typingContents.text} </h4> */}
+                        {/* <span className='asdfd'>A</span> */}
+                        {/* <TypeAnimation
+                            cursor={true}
+                            sequence={designations}
+                            wrapper="h4"
+                            repeat={Infinity}
+                            data-aos="fade-right"
+                            data-aos-duration="3000"
+                            className='header-banner-designation'
+                            /> */}
+
+                <Typed
+                    strings={type_texts}
+                        typeSpeed={40}
+                        backSpeed={50}
+                        data-aos="fade-right"
+                        data-aos-duration="3000"
+                        className='header-banner-designation'
+                        loop >
+                        
+                </Typed>
 
                         <Button 
                         data-aos="fade-up"

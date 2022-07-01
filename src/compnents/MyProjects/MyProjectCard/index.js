@@ -43,7 +43,9 @@ const MyProjectCard = ({project}) => {
                         <p className="featured-project"
                             data-aos={( parseInt(id) % 2 === 0 ) ? "fade-left" : "fade-right"}
                             data-aos-duration="3000"
-                            data-aos-once="true" > Featured Project </p>
+                            data-aos-once="true" 
+                            
+                            > Featured Project </p>
                     }
                     <h3 className="project-title"> {name} </h3>
                     <p className="project-description"

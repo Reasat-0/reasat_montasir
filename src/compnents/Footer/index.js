@@ -1,8 +1,26 @@
 
 import { Row, Col } from 'reactstrap';
+import { useEffect, useState } from "react"
+import SmoothScrolling from "../../utils/smooth_scroll"
+
 import { Link } from "react-router-dom";
 // import {link} from 'react-router-dom'
 const Footer = () => {
+
+    const [active_nav,setActiveNav] = useState(null)
+    const onNavClick = (active_nav) => {
+        setActiveNav(active_nav)
+        scrollUp(active_nav)
+    }
+
+    const scrollUp = (id) => {
+        SmoothScrolling.scrollTo(id);
+        this.setState({
+            isOpen: !this.state.isOpen
+        });
+    }
+
+
     return (
         <footer className="footer">
             <Row>
@@ -28,26 +46,26 @@ const Footer = () => {
                         </li>
                     </ul>
                 </Col>
-                <Col md={3} className="footer-cols">
+                <Col md={3} className="footer-cols useful-links-col">
                     <h4> Useful Links </h4>
                     <ul className='footer-nav'>
-                        <li className='footer-nav-item'> 
+                        <li className='footer-nav-item' onClick={ () => { onNavClick('about') } }> 
                             <i className="fas fa-angle-double-right mr-2"></i> 
                             {/* <Link to={{ pathname: 'facebook.com'}}>Home</Link>  */}
                             Home
                         </li>
-                        <li className='footer-nav-item'> 
+                        <li className='footer-nav-item' onClick={ () => { onNavClick('about') } }> 
                             <i className="fas fa-angle-double-right mr-2"></i> 
                             {/* <Link to="/invoices">About</Link>  */}
                             About
                         </li>
-                        <li className='footer-nav-item'> 
+                        <li className='footer-nav-item' onClick={ () => { onNavClick('contact') } }> 
                             <i className="fas fa-angle-double-right mr-2"></i> 
                             Contact 
                         </li>
-                        <li className='footer-nav-item'> 
+                        <li className='footer-nav-item' onClick={ () => { onNavClick('my_projects') } }> 
                             <i className="fas fa-angle-double-right mr-2"></i> 
-                            Skills 
+                            My Works 
                         </li>
                     </ul>
                 </Col>

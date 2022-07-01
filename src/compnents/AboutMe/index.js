@@ -52,9 +52,12 @@ const AboutMe = () => {
                         <p 
                             className="about-info-text"
                         >
-                            Hi My Name Is Reasat. I Am A Web Developer."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            Hi there!!! It's me, Reasat. I Am A Frontend Developer and Web UI UX designer with 3+ years of experience. I have always been someone who loves to make creative things with pen and papers as well as getting hands dirty on keyboard or mouse to make them dirty may be with colors or shapes. I provide services like determining the structure/wirefreames, prototypes and design of web pages, building reusable codes, optimizing page loading times, browser compatibility with device responsiveness.
                         </p>
                         <Row className="about-icon-row">
+                            <Col md={12}>
+                                <h5 className="design-principle-subtitle"> The principles I usually follow during the designing phase of a web site or web page : </h5>
+                            </Col>
                             <Col 
                                 md={4} 
                                 className="followed-principles-col"

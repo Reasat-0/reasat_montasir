@@ -62,7 +62,7 @@ function TabPanel(props) {
             year: '2014 - 2019',
             degree: 'Bachelor of Computer Science & Engineering',
             institution: "International Islamic University Chittagong",
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            description: "It was a 4+ year's journey where I got the foundation of my future path way. I would show my honour and gratitude to all of the honorary faculties who allways helped me to give me the proper guidance. During this journey I was connected and accomplished with several projects."
         },
         {
             id: 1,
@@ -70,7 +70,7 @@ function TabPanel(props) {
             year: '2011 - 2013',
             degree: 'Higher Secondary School Certificate',
             institution: "Hazi Mohammed Mohsin College",
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            description: "I completed my Higher Secondary degree from the background of Science. During these years I had involvement with several co-curricular activities and was focused in preparing myself for higher studies. I obtained a GPA of 4.90 out of 5.00 on this exam."
         },
         {
             id: 2,
@@ -78,7 +78,7 @@ function TabPanel(props) {
             year: '2009 - 2011',
             degree: 'Secondary School Certificate',
             institution: "Mirza Ahmed Ispahani Smriti Biddalaya",
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            description: "These years were the best and most memorable years of my life. I obtained a GPA of 5.00 out of 5.00 in Secondary School Certification from the background of Science and I had my basic schooling and grooming here"
         }
     ],
     experience : [
@@ -88,7 +88,7 @@ function TabPanel(props) {
             year: '2020 - 2022',
             degree: 'Consultant (Associate Development)',
             institution: "ASCII System Ltd.",
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            description: "I started my professional journey here. I had my great times with them and completed and accomplished several projects with success which added a greate revenue for the company."
         },
         {
             id: 1,
@@ -96,7 +96,7 @@ function TabPanel(props) {
             year: '2019 - 2020',
             degree: 'Internship(Web Development)',
             institution: "ASCII System Ltd.",
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            description: "On this time I was involved mainly in self learning with ASCII. Where I build several apps using HTML, CSS, Bootstrap, JS and WordPress under the supervision and started to work on a live project named EV Oilfield services."
         }
     ],
     expertise : [
@@ -170,25 +170,27 @@ export default function MoreAboutMe(){
                     data-aos-duration="3000"
                     data-aos-once="true" 
                     >
-                    <Tab label="Education" {...tabMenuProps(0)} />
-                    <Tab label="Experience" {...tabMenuProps(1)} />
-                    <Tab label="Expertise" {...tabMenuProps(2)} />
+                    <Tab label="Experience" {...tabMenuProps(0)} />
+                    <Tab label="Expertise" {...tabMenuProps(1)} />
+                    <Tab label="Education" {...tabMenuProps(2)} />
                     </Tabs>
                     <TabPanel value={value} index={0} className='more-about-tabs-panel'
-                              data-aos="fade-up"
-                              data-aos-duration="3000"
-                              data-aos-once="true" >
+                      data-aos="fade-up"
+                      data-aos-duration="3000"
+                      data-aos-once="true" 
+                    >
+                        <CustomTabContent tabTitle="Experience" contents={moreAboutInfo['experience']}/>
+                    </TabPanel>
+                    <TabPanel value={value} index={1} className='more-about-tabs-panel'>
+                        <CustomTabContent tabTitle="A Few Technologies I've Been Working On" contents={moreAboutInfo['expertise']}/>
+                    </TabPanel>
+                    <TabPanel value={value} index={2} className='more-about-tabs-panel'
+                              >
                         <CustomTabContent 
                           tabTitle="Education" 
                           contents={moreAboutInfo['education']}
                                
                         />
-                    </TabPanel>
-                    <TabPanel value={value} index={1} className='more-about-tabs-panel'>
-                        <CustomTabContent tabTitle="Experience" contents={moreAboutInfo['experience']}/>
-                    </TabPanel>
-                    <TabPanel value={value} index={2} className='more-about-tabs-panel'>
-                        <CustomTabContent tabTitle="A Few Technologies I've Been Working On" contents={moreAboutInfo['expertise']}/>
                     </TabPanel>
                 </Box>
             </Container>

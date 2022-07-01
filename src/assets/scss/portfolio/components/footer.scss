@@ -13,6 +13,7 @@
 
         .footer-nav{
             padding-left: 0;
+            
             .footer-nav-item{
                 color :white;
                 list-style: none;
@@ -21,6 +22,11 @@
                     color :white;
                     margin-right: 10px;
                 }
+            }
+        }
+        &.useful-links-col{
+            .footer-nav-item{
+                cursor: pointer;
             }
         }
         &.social-col{
