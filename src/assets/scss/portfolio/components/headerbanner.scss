@@ -80,3 +80,60 @@
         }
     }
 }
+
+@media screen and (min-width:320px){
+    .header-banner-section{
+        min-height: 100vh;
+        .header-banner-overlay{
+            display: none;
+        }
+        .header-banner-left-col{
+            text-align: center;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.842);
+            min-height: 100vh;
+            .header-banner-greeting,
+            .header-banner-intro,
+            .header-banner-designation{
+                color :white;
+                
+            }
+            .header-banner-greeting{
+                font-size: 16px;
+            }
+            .header-banner-designation{
+                font-size: 15px;
+            }
+            .header-banner-intro{
+                font-size: 16px;
+                span{
+                    font-size: 24px;
+                    line-height: 1.6;
+                    color: $theme_gold_light_1;
+                }
+            }
+            .header-banner-designation{
+
+            }
+            .header-banner-btn{
+                padding: 6px 25px;
+                font-size: 16px;
+            }
+        }
+        .header-banner-right-col{
+            position: absolute;
+            z-index: 0;
+            padding:0;
+            .header-banner-img{
+                max-width: 100%;
+                &:before{
+
+                img{
+
+                }
+            }
+        }
+        }
+    }
+    
+}

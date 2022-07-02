@@ -1,16 +1,20 @@
 import { useEffect, useState } from "react"
-import { Collapse, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink } from "reactstrap"
+import { Collapse, Nav, Navbar, NavbarBrand, NavItem, NavLink, NavbarToggler } from "reactstrap"
 import RLogo from '../../assets/img/reasat_logo.png'
 import SmoothScrolling from "../../utils/smooth_scroll"
 const CustomNav = () => {
 
     const [navbar_color,setNavbarColor] = useState('transparent')
     const [active_nav,setActiveNav] = useState(null)
+    const [navbarToggleOpen,setNavbarToggleOpen] = useState(false)
 
     useEffect( () => {
         window.addEventListener("scroll", changeNavbarColor)
     })
 
+    const toggle = () => {
+        setNavbarToggleOpen((prev) => !prev)
+    }
 
 
     const changeNavbarColor = () => {
@@ -36,11 +40,13 @@ const CustomNav = () => {
     return (
         <>
             <Navbar
-                expand="md"
-                className={`fixed-top custom-nav-main ${navbar_color}`}
+                className={`fixed-top custom-navbar ${navbar_color} ${navbarToggleOpen ? 'toggle-opened' : ""}`}
                 onClick={changeNavbarColor}
+                // color="light" 
+                light 
+                expand="md"
             >
-                <Container className="custom-nav-container">
+                {/* <div className="custom-nav-container"> */}
                     <NavbarBrand>
                         <div className="logo-section">
                             <img src={RLogo} alt="logo"/>
@@ -48,7 +54,8 @@ const CustomNav = () => {
 
                     </NavbarBrand>
 
-                    <Collapse navbar className="custom-nav-collapse">
+                    <NavbarToggler onClick={toggle} className="custom-nav-toggler"/>
+                    <Collapse isOpen={navbarToggleOpen} navbar className="custom-nav-collapse">
                         <Nav
                             navbar
                             className="custom-nav-item-container"
@@ -78,7 +85,13 @@ const CustomNav = () => {
                             </NavItem>
                         </Nav>
                     </Collapse>
-                </Container>
+
+                        {/* <NavbarToggler onClick={'this.toggle'}>
+                            <span className="navbar-toggler-bar bar1"></span>
+                            <span className="navbar-toggler-bar bar2"></span>
+                            <span className="navbar-toggler-bar bar3"></span>
+                        </NavbarToggler> */}
+                {/* </div> */}
             </Navbar>
 
             
