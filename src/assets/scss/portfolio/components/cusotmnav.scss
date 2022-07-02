@@ -1,78 +1,78 @@
-
-.custom-navbar{
-    border-bottom: 1px solid #a2bdff78;
-        &.colored{
-            background: white;
-        }
-        .container-fluid{
-            padding: 0 10%;
-        
-        .navbar-brand{
-            max-width: 70px;
-            img{
-                width:100%;
-                border-radius: 50%;
+@media screen and (min-width:768px){
+    .custom-navbar{
+        border-bottom: 1px solid #a2bdff78;
+            &.colored{
+                background: white;
             }
-        }
-        .custom-nav-collapse{
-            justify-content: flex-end;
-            .custom-nav-item-container{
-                display: flex;
+            .container-fluid{
+                padding: 0 10%;
+            
+            .navbar-brand{
+                max-width: 70px;
+                img{
+                    width:100%;
+                    border-radius: 50%;
+                }
+            }
+            .custom-nav-collapse{
                 justify-content: flex-end;
-                li{
-                    margin: 0 20px;
-                    a{
-                        padding: 3px 5px;
-                        text-decoration: none;
-                        font-weight: 700;
-                        color: $primary_blue;
-                        letter-spacing: 1px;
-                        cursor: pointer;
-                    }
-                    &.active{
+                .custom-nav-item-container{
+                    display: flex;
+                    justify-content: flex-end;
+                    li{
+                        margin: 0 20px;
                         a{
-                            color: $primary_gold_vibe;
+                            padding: 3px 5px;
+                            text-decoration: none;
+                            font-weight: 700;
+                            color: $primary_blue;
+                            letter-spacing: 1px;
+                            cursor: pointer;
+                        }
+                        &.active{
+                            a{
+                                color: $primary_gold_vibe;
+                            }
                         }
                     }
                 }
             }
-        }
-        .custom-nav-toggler{
-            background-color: rgba(0,0,0,.1);
-            &:focus,
-            &:focus-visible{
-                box-shadow: none;
+            .custom-nav-toggler{
+                background-color: rgba(0,0,0,.1);
+                &:focus,
+                &:focus-visible{
+                    box-shadow: none;
+                }
             }
         }
-    }
-    &.toggle-opened{
-        background-color: $theme_blue;
-        .custom-nav-collapse{
-            .custom-nav-item-container{
-                li{
-                    margin: 2px 0;
-                    border-bottom: 1px solid rgb(143, 154, 185);
-                    &:last-child{
-                        border-bottom: none;
-                    }
-                    a{
-                        padding: 8px 0;
-                        color: #fff;
-                        
-                    }
-                    &.active{
+        &.toggle-opened{
+            background-color: $theme_blue;
+            .custom-nav-collapse{
+                .custom-nav-item-container{
+                    li{
+                        margin: 2px 0;
+                        border-bottom: 1px solid rgb(143, 154, 185);
+                        &:last-child{
+                            border-bottom: none;
+                        }
                         a{
+                            padding: 8px 0;
+                            color: #fff;
+                            
+                        }
+                        &.active{
+                            a{
 
-                            color: rgb(199, 161, 143);
+                                color: rgb(199, 161, 143);
+                            }
                         }
                     }
                 }
             }
         }
+        // }
     }
-    // }
 }
-
 
 @media screen and (min-width:320px){
     
