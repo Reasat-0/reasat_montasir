@@ -8,39 +8,30 @@ import TypeAnimation from 'react-type-animation';
 
 import Typed from 'react-typed';
 
+import bgImage from '../../assets/img/bg.png'
+
 const HeaderBanner = () => {
-
-    // const typingTexts = [
-    //     'Frontend Developer',
-    //     'React Developer',
-    //     'Web UI/UX Designer',
-    //     'Wireframe Maker'
-    // ]
-
-    const designations = 
-        [
-            'Frontend Developer',
-            1000,
-            'React Developer',
-            1000,
-            'Web UI/UX Designer',
-            1000,
-            'Wirframe/Prototype maker',
-            1000
-          ]
-          const type_texts = 
-          [
+        // const designations = 
+        //     [
+        //     'Frontend Developer',
+        //     1000,
+        //     'React Developer',
+        //     1000,
+        //     'Web UI/UX Designer',
+        //     1000,
+        //     'Wireframe/Prototype maker',
+        //     1000
+        // ]
+            const type_texts = 
+            [
               'Frontend Developer',
               'React Developer',
               'Web UI/UX Designer',
-              'Wirframe/Prototype maker'
+              'Wireframe/Prototype maker'
             ]
-    
-    
-      
     return(
-        <section className="header-banner-section" id="home">
-            <div className='header-banner-overlay'></div>
+        <section className="header-banner-section" id="home" style={{backgroundImage : `url(${ bgImage })` }}>
+            {/* <div className='header-banner-overlay'></div> */}
             <Container>
                 <Row>
                     <Col 
@@ -95,7 +86,7 @@ const HeaderBanner = () => {
                             More About Me
                         </Button>
                     </Col>
-                    <Col md={6} className='header-banner-right-col'>
+                    {/* <Col md={6} className='header-banner-right-col'>
                         <div className='header-banner-img'>
                             <img 
                                 data-aos="fade-left"
@@ -104,7 +95,7 @@ const HeaderBanner = () => {
                                 src={headerBannerImg} 
                                 alt="header-image"/>
                         </div>
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
         </section>
