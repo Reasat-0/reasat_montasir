@@ -1,0 +1,67 @@
+.contact-section{
+    padding: 60px 120px;
+    background: linear-gradient(to right, $primary_blue,$theme_blue_sub_title_lightest, $theme_blue);
+    
+    .contact-container{
+        background: white;
+        padding: 70px 120px 90px 80px;
+        border-radius: 10px;
+        .contact-right-sec{
+            .contact-me-heading{
+                font-size: 28px;
+                font-weight: 800;
+                margin-bottom: 20px;
+                color: $theme_blue;
+
+            }
+            .custom-contact-textfield{
+                margin: 8px 0px;
+                // border: 1px solid gray;
+                border-radius: 50px;
+                background: #e6e6e6;
+                padding-left: 20px;
+                svg{
+                    color: #919191;
+                    font-size: 19px;
+                }
+                fieldset{
+                    display: none;
+                }
+                .MuiOutlinedInput-input{
+                    padding: 12px 14px;
+                    &::placeholder{
+                        color :#919191;
+                        font-weight: 600;
+                    }
+                }
+                &.multilined{
+                    border-radius: 20px;
+                    padding-left:5px;
+                    textarea{
+                        padding:0;
+                        &::placeholder{
+                            color : #919191;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                &.Mui-focused{
+                    svg{
+                        color: $theme_blue_lite;
+                    }
+                }
+                
+            }
+            .contact-send-btn{
+                width:100%;
+                margin-top: 20px;
+                border-radius: 30px;
+                background: linear-gradient(to right, $primary_blue, $theme_blue);
+                font-size:16px;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

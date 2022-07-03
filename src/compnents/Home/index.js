@@ -4,6 +4,7 @@ import HeaderBanner from '../HeaderBanner';
 import AboutMe from '../AboutMe';
 import MoreAboutMe from '../MoreAboutMe';
 import MyProjects from '../MyProjects';
+import Contact from '../Contact';
 import Footer from '../Footer';
 
 
@@ -23,6 +24,7 @@ const Home = () => {
             <AboutMe/>
             <MoreAboutMe/>
             <MyProjects/>
+            <Contact/>
             <Footer/>
         </>
     )
