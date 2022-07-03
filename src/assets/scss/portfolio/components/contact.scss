@@ -6,6 +6,15 @@
         background: white;
         padding: 70px 120px 90px 80px;
         border-radius: 10px;
+        .contact-left-sec{
+            display: flex;
+            align-items: center;
+            padding: 40px 80px 40px 40px;
+            img{
+                width:100%;
+            }
+
+        }
         .contact-right-sec{
             .contact-me-heading{
                 font-size: 28px;
@@ -20,6 +29,8 @@
                 border-radius: 50px;
                 background: #e6e6e6;
                 padding-left: 20px;
+                color: #7c7c7c;
+                font-weight: 600;
                 svg{
                     color: #919191;
                     font-size: 19px;
