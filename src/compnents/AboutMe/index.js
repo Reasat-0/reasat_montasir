@@ -10,7 +10,6 @@ import comfortable from '../../assets/img/about/comfortable.png';
 import simplicity from '../../assets/img/about/simplicity.png';
 
 
-
 const AboutMe = () => {
     return(
         <section 
@@ -98,10 +97,12 @@ const AboutMe = () => {
                                 <p className="icon-text"> Responsive Design </p>
                             </Col>
                         </Row>
-                        <div className="about-btn-holder">
-                            <Button className="mr-4">
-                                Download Resume 
-                            </Button>
+                        <div className="about-btn-holder" >
+                            <a href="../../../../resume.pdf" downlaod='reasat-montasir.pdf'>
+                                <Button className="mr-4">
+                                    Get Resume 
+                                </Button>
+                            </a>
                             <Button className="ml-4"> Contact Me </Button>
                         </div>
                     </Col>

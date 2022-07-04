@@ -16,6 +16,17 @@
 
         }
         .contact-right-sec{
+            padding-left: 60px;
+            .contact-form{
+                position: relative;
+                .Toastify{
+                    position: relative;
+                    .Toastify__toast-container--top-right {
+                        top: 6em;
+                        right: 1em;
+                    }
+                }
+            }
             .contact-me-heading{
                 font-size: 28px;
                 font-weight: 800;
@@ -40,6 +51,8 @@
                 }
                 .MuiOutlinedInput-input{
                     padding: 12px 14px;
+                    color: #7e7e7e;
+                    font-size: 14px;
                     &::placeholder{
                         color :#919191;
                         font-weight: 600;
@@ -50,6 +63,9 @@
                     padding-left:5px;
                     textarea{
                         padding:0;
+                        font-size: 14px;
+                        color :#919191;
+                        font-weight: 600;
                         &::placeholder{
                             color : #919191;
                             font-weight: 600;
@@ -72,6 +88,20 @@
                 font-weight: 600;
                 letter-spacing: 1.2px;
                 text-transform: uppercase;
+            }
+            .sending-loader{
+                position: absolute;
+                z-index: 1;
+                opacity: 0.7;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #ffffff7d;
+                img{
+                    max-width: 15%;
+                }
             }
         }
     }
