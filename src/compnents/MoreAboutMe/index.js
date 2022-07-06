@@ -171,8 +171,8 @@ export default function MoreAboutMe(){
                     data-aos-once="true" 
                     >
                     <Tab label="Experience" {...tabMenuProps(0)} />
-                    <Tab label="Expertise" {...tabMenuProps(1)} />
-                    <Tab label="Education" {...tabMenuProps(2)} />
+                    {/* <Tab label="Expertise" {...tabMenuProps(1)} /> */}
+                    <Tab label="Education" {...tabMenuProps(1)} />
                     </Tabs>
                     <TabPanel value={value} index={0} className='more-about-tabs-panel'
                       data-aos="fade-up"
@@ -181,10 +181,10 @@ export default function MoreAboutMe(){
                     >
                         <CustomTabContent tabTitle="Experience" contents={moreAboutInfo['experience']}/>
                     </TabPanel>
-                    <TabPanel value={value} index={1} className='more-about-tabs-panel'>
+                    {/* <TabPanel value={value} index={1} className='more-about-tabs-panel'>
                         <CustomTabContent tabTitle="A Few Technologies I've Been Working On" contents={moreAboutInfo['expertise']}/>
-                    </TabPanel>
-                    <TabPanel value={value} index={2} className='more-about-tabs-panel'
+                    </TabPanel> */}
+                    <TabPanel value={value} index={1} className='more-about-tabs-panel'
                               >
                         <CustomTabContent 
                           tabTitle="Education" 

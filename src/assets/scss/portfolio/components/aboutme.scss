@@ -6,9 +6,10 @@
     .about-left-col{
         padding: 30px 50px 50px 20px;
         .about-img-holder{
-            box-shadow: inset(4px 4px 4px);
+            // box-shadow: inset(4px 4px 4px);
+            text-align: center;
             img{
-                max-width: 100%;
+                max-width:90%;
                 border-radius: 50%;
             }
         }
@@ -23,30 +24,47 @@
                 font-weight: 700;
                 line-height: 1.8;
             }
-            .followed-principles-col{
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                padding: 10px;
-                border-left: 4px solid $theme_blue;
-                border-radius: 8px;
-                box-shadow: -5px 5px 5px 0px rgb(0 0 0 / 15%) !important;
-                .icon-wrapper{
-                    flex:0 0 25px;
-                    max-width: 25px;
-                    margin: 0 8px 0 0;
-                    img{
-                        max-width: 100%;
+            .about-skills-col-wrapper{
+                padding: 0px 5px;
+                .about-skills-col{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    padding: 0px 10px;
+                    // border-left: 4px solid $theme_blue;
+                    // border-radius: 8px;
+                    // box-shadow: -5px 5px 5px 0px rgb(0 0 0 / 15%) !important;
+                    min-height: 45px;
+                    .icon-wrapper{
+                        flex:0 0 40px;
+                        max-width: 40px;
+                        margin: 0 8px 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 5px;
+                        img{
+                            max-width: 100%;
+                        }
+                        &::before{
+                            content: "";
+                                position: absolute;
+                                width: 40px;
+                                height: 40px;
+                                background: rgb(103, 141, 197);
+                                opacity: 0.2;
+                                border-radius: 50%;
+                        }
                     }
-                }
-                .icon-text{
-                    flex: 0 0 calc(100% - 25px);
-                    max-width: calc(100% - 25px);
-                    margin-bottom: 0px;
-                    font-weight: 600;
-                    font-size: 15px;
+                    .icon-text{
+                        flex: 0 0 calc(100% - 40px);
+                        max-width: calc(100% - 40px);
+                        margin-bottom: 0px;
+                        font-weight: 600;
+                        font-size: 15px;
+                    }
                 }
             }
         }

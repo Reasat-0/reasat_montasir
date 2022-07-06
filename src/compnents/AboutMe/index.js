@@ -1,13 +1,20 @@
 import { Container, Row, Col, Button } from "reactstrap";
-import aboutMeImg from '../../assets/img/about.jpg'
-import uxIcon from '../../assets/img/about/ux.png';
-import uxIdea from '../../assets/img/about/idea.png';
-import focus from '../../assets/img/about/focus.png';
-import fast from '../../assets/img/about/fast.png';
-import hierarchy from '../../assets/img/about/hierarchy.png';
-import responsive from '../../assets/img/about/responsive.png';
-import comfortable from '../../assets/img/about/comfortable.png';
-import simplicity from '../../assets/img/about/simplicity.png';
+import aboutMeImg from '../../assets/img/about__.jpg'
+// import uxIcon from '../../assets/img/about/ux.png';
+// import uxIdea from '../../assets/img/about/idea.png';
+// import focus from '../../assets/img/about/focus.png';
+// import fast from '../../assets/img/about/fast.png';
+// import hierarchy from '../../assets/img/about/hierarchy.png';
+// import responsive from '../../assets/img/about/responsive.png';
+// import comfortable from '../../assets/img/about/comfortable.png';
+// import simplicity from '../../assets/img/about/simplicity.png';
+
+import html_css from '../../assets/img/about_skills/html_css.png'
+import js from '../../assets/img/about_skills/js.png'
+import bootstrap from '../../assets/img/about_skills/bootstrap.png'
+import react from '../../assets/img/about_skills/react.png'
+import jquery from '../../assets/img/about_skills/jquery.png'
+import figma from '../../assets/img/about_skills/figma.png'
 
 
 const AboutMe = () => {
@@ -55,46 +62,62 @@ const AboutMe = () => {
                         </p>
                         <Row className="about-icon-row">
                             <Col md={12}>
-                                <h5 className="design-principle-subtitle"> The principles I usually follow during the designing phase of a web site or web page : </h5>
+                                <h5 className="design-principle-subtitle"> A fewer technologies I've been working on... : </h5>
                             </Col>
                             <Col 
                                 md={4} 
-                                className="followed-principles-col"
+                                className="about-skills-col-wrapper"
                                 >
-                                <div className="icon-wrapper">
-                                    <img src={focus} alt="web-design-icon" />
+                                <div className="about-skills-col">
+                                    <div className="icon-wrapper">
+                                        <img src={html_css} alt="web-design-icon" />
+                                    </div>
+                                    <p className="icon-text"> HTML & CSS </p>
                                 </div>
-                                <p className="icon-text"> Purpose Focused </p>
                             </Col>
-                            <Col md={4} className="followed-principles-col">
-                                <div className="icon-wrapper">
-                                    <img src={simplicity} alt="web-design-icon" />
+                            <Col md={4} className="about-skills-col-wrapper">
+                                <div className="about-skills-col">
+                                    <div className="icon-wrapper">
+                                        <img src={bootstrap} alt="web-design-icon" />
+                                    </div>
+                                
+                                <p className="icon-text"> Bootstrap </p>
                                 </div>
-                                <p className="icon-text"> Simplicity </p>
                             </Col>
-                            <Col md={4} className="followed-principles-col">
-                                <div className="icon-wrapper">
-                                    <img src={comfortable} alt="web-design-icon" />
+                            <Col md={4} className="about-skills-col-wrapper">
+                                <div className="about-skills-col">
+                                    <div className="icon-wrapper">
+                                        <img src={js} alt="web-design-icon" />
+                                    </div>
+                                
+                                    <p className="icon-text"> Javascript </p>
                                 </div>
-                                <p className="icon-text"> Comfortable UI/UX </p>
                             </Col>
-                            <Col md={4} className="followed-principles-col">
-                                <div className="icon-wrapper">
-                                    <img src={hierarchy} alt="web-design-icon" />
+                            <Col md={4} className="about-skills-col-wrapper">
+                                <div className="about-skills-col">
+                                    <div className="icon-wrapper">
+                                        <img src={jquery} alt="web-design-icon" />
+                                    </div>
+                                
+                                    <p className="icon-text"> Jquery </p>
                                 </div>
-                                <p className="icon-text"> Visual Hierarchy </p>
                             </Col>
-                            <Col md={4} className="followed-principles-col">
-                                <div className="icon-wrapper">
-                                    <img src={fast} alt="web-design-icon" />
+                            <Col md={4} className="about-skills-col-wrapper">
+                                <div className="about-skills-col">
+                                    <div className="icon-wrapper">
+                                        <img src={react} alt="web-design-icon" />
+                                    </div>
+                                
+                                    <p className="icon-text"> React & Redux </p>
                                 </div>
-                                <p className="icon-text"> Fast Loading Time </p>
                             </Col>
-                            <Col md={4} className="followed-principles-col">
-                                <div className="icon-wrapper">
-                                    <img src={responsive} alt="web-design-icon" />
+                            <Col md={4} className="about-skills-col-wrapper">
+                                <div className="about-skills-col">
+                                    <div className="icon-wrapper">
+                                        <img src={figma} alt="web-design-icon" />
+                                    </div>
+                                <p className="icon-text"> Figma </p>
                                 </div>
-                                <p className="icon-text"> Responsive Design </p>
                             </Col>
                         </Row>
                         <div className="about-btn-holder" >
