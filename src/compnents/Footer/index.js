@@ -87,22 +87,19 @@ const Footer = () => {
                     </ul>
                 </Col>
                 <Col md={3} className="footer-cols social-col">
-                    <h4> Follow Me Here </h4>
+                    <h4> Catch Me in Social Media </h4>
                     <ul className='footer-nav'>
                         <li className='footer-nav-item'> 
-                            <i className="fas fa-angle-double-right mr-2"></i> 
+                            <a href="https://www.facebook.com/reasat.chowdhury/"><i className="fab fa-facebook"></i></a> 
                         </li>
                         <li className='footer-nav-item'> 
-                            <i className="fas fa-angle-double-right mr-2"></i> 
+                            <a href="https://www.instagram.com/reasat._.muntasir/"><i className="fab fa-instagram"></i></a>  
                         </li>
                         <li className='footer-nav-item'> 
-                            <i className="fas fa-angle-double-right mr-2"></i> 
+                            <a href="https://www.linkedin.com/in/md-reasat-montasir-chowdhury-109825190/"><i className="fab fa-linkedin-in"></i></a> 
                         </li>
                         <li className='footer-nav-item'> 
-                            <i className="fas fa-angle-double-right mr-2"></i> 
-                        </li>
-                        <li className='footer-nav-item'> 
-                            <i className="fas fa-angle-double-right mr-2"></i> 
+                            <a href="https://api.whatsapp.com/send?phone=8801521484206"><i className="fab fa-whatsapp"></i></a> 
                         </li>
                     </ul>
                 </Col>

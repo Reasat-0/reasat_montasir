@@ -32,6 +32,12 @@
         &.social-col{
             .footer-nav{
                 display: flex;
+                .footer-nav-item{
+                    margin: 5px 3px;
+                    i{
+                        font-size: 24px;
+                    }
+                }
             }
         }
     }
