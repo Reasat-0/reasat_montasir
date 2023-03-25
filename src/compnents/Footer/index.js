@@ -34,7 +34,7 @@ const Footer = () => {
                         </li>
                         <li className='footer-nav-item'> 
                             <i className="fas fa-angle-double-right mr-2"></i> 
-                            Web UI/UX Design
+                            Template Building
                         </li>
                         <li className='footer-nav-item'> 
                             <i className="fas fa-angle-double-right mr-2"></i> 
@@ -74,7 +74,7 @@ const Footer = () => {
                     <ul className='footer-nav'>
                         <li className='footer-nav-item'> 
                             <i className="fas fa-map-marker-alt"></i>
-                            Ambia Bhaban, House-203, Moulovi Purkur Paar, Chandgaon, Chattogram
+                            Road No -12, Shekher Tek, Mohammadpur, Dhaka
                         </li>
                         <li className='footer-nav-item'> 
                             <i className="fas fa-phone-alt"></i>

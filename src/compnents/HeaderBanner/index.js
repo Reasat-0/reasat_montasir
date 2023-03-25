@@ -24,10 +24,10 @@ const HeaderBanner = () => {
         // ]
             const type_texts = 
             [
+              'Software Engineer',
               'Frontend Developer',
               'React Developer',
-              'Web UI/UX Designer',
-              'Wireframe/Prototype maker'
+              'Template Builder'
             ]
     return(
         <section className="header-banner-section" id="home" style={{backgroundImage : `url(${ bgImage })` }}>

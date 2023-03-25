@@ -4,12 +4,54 @@ import project1 from '../../assets/img/projects/systrm.png'
 import project2 from '../../assets/img/projects/namaste.png'
 import project3 from '../../assets/img/projects/idst.png'
 import project4 from '../../assets/img/projects/portfolio.png'
+import project5 from '../../assets/img/projects/minawill.png'
+import project6 from '../../assets/img/projects/defy.png'
 
 import Slider from 'react-slick'
 
 const myProjects = [
+
     {
         id: 0,
+        name: 'Instant DST',
+        tagline: 'DST file conversion and generation site with package plan and so on',
+        featured: true,
+        image: project3,
+        git: null,
+        url: 'https://instantdst.com',
+        subname: 'Instant DST Generator',
+        description: "DST conversion app from any uploaded artwork. Used Rest API's to make different functionalities such as - package fetching, plan purchasing, merging images, draft mode, dst conversions and so many. Fully device responsive with browser compatibility",
+        technology: ['React', 'ReactStrap', 'Material-UI', 'Rest API']
+    },
+
+    {
+        id: 1,
+        name: 'Minawill',
+        tagline: 'Will generation based on given profile',
+        featured: true,
+        image: project5,
+        git: null,
+        url: 'https://minawill.com',
+        subname: 'Will generator',
+        description: "Generates will for user along with support for their futures ",
+        technology: ['Next', 'Material-UI', 'Rest API']
+    },
+
+    {
+        id: 2,
+        name: 'Defy',
+        tagline: 'Insurance to insure your business',
+        featured: true,
+        image: project6,
+        git: null,
+        url: 'https://defyinsurance.com/',
+        subname: 'Insurance Medium',
+        description: "A platform that help user with all needed staffs to secure his busines with insurance",
+        technology: ['Next', 'Material-UI', 'Rest API']
+    },
+
+    {
+        id: 3,
         name: 'Systrm',
         featured: true,
         image: project1,
@@ -21,7 +63,7 @@ const myProjects = [
         technology: ['Bootstrap', 'Wordpress', 'Jquery', 'Elementor']
     },
     {
-        id: 1,
+        id: 4,
         name: 'Namaste Ventures',
         tagline: 'Business oriented site with active contact form using Rest API',
         featured: true,
@@ -32,20 +74,9 @@ const myProjects = [
         description: "A single page branding application using React. Used Rest API and its integration for contact page functionality. Used Reactstrap and Materail-UI packages for more integrity of the site and for the flexibility with any device",
         technology: ['React', 'ReactStrap', 'Material-UI', 'Rest API']
     },
+
     {
-        id: 2,
-        name: 'Instant DST',
-        tagline: 'DST file conversion and generation site with package plan and so on',
-        featured: true,
-        image: project3,
-        git: null,
-        url: 'https://instantdst.com',
-        subname: 'Instant DST Generator',
-        description: "DST conversion app from any uploaded artwork. Used Rest API's to make different functionalities such as - package fetching, plan purchasing, merging images, draft mode, dst conversions and so many. Fully device responsive with browser compatibility",
-        technology: ['React', 'ReactStrap', 'Material-UI', 'Rest API']
-    },
-    {
-        id: 3,
+        id: 5,
         name: 'Portfolio',
         tagline: 'Personal portfolio based on my hands on experience and works',
         featured: true,

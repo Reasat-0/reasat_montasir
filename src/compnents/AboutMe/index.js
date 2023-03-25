@@ -14,7 +14,9 @@ import js from '../../assets/img/about_skills/js.png'
 import bootstrap from '../../assets/img/about_skills/bootstrap.png'
 import react from '../../assets/img/about_skills/react.png'
 import jquery from '../../assets/img/about_skills/jquery.png'
+import tailwind from '../../assets/img/about_skills/tailwind.png'
 import figma from '../../assets/img/about_skills/figma.png'
+import next from '../../assets/img/about_skills/next.png'
 
 
 const AboutMe = () => {
@@ -64,26 +66,8 @@ const AboutMe = () => {
                             <Col md={12}>
                                 <h5 className="design-principle-subtitle"> A fewer technologies I've been working on... : </h5>
                             </Col>
-                            <Col 
-                                md={4} 
-                                className="about-skills-col-wrapper"
-                                >
-                                <div className="about-skills-col">
-                                    <div className="icon-wrapper">
-                                        <img src={html_css} alt="web-design-icon" />
-                                    </div>
-                                    <p className="icon-text"> HTML & CSS </p>
-                                </div>
-                            </Col>
-                            <Col md={4} className="about-skills-col-wrapper">
-                                <div className="about-skills-col">
-                                    <div className="icon-wrapper">
-                                        <img src={bootstrap} alt="web-design-icon" />
-                                    </div>
-                                
-                                <p className="icon-text"> Bootstrap </p>
-                                </div>
-                            </Col>
+
+
                             <Col md={4} className="about-skills-col-wrapper">
                                 <div className="about-skills-col">
                                     <div className="icon-wrapper">
@@ -93,15 +77,7 @@ const AboutMe = () => {
                                     <p className="icon-text"> Javascript </p>
                                 </div>
                             </Col>
-                            <Col md={4} className="about-skills-col-wrapper">
-                                <div className="about-skills-col">
-                                    <div className="icon-wrapper">
-                                        <img src={jquery} alt="web-design-icon" />
-                                    </div>
-                                
-                                    <p className="icon-text"> Jquery </p>
-                                </div>
-                            </Col>
+
                             <Col md={4} className="about-skills-col-wrapper">
                                 <div className="about-skills-col">
                                     <div className="icon-wrapper">
@@ -114,11 +90,48 @@ const AboutMe = () => {
                             <Col md={4} className="about-skills-col-wrapper">
                                 <div className="about-skills-col">
                                     <div className="icon-wrapper">
-                                        <img src={figma} alt="web-design-icon" />
+                                        <img src={next} alt="web-design-icon" />
                                     </div>
-                                <p className="icon-text"> Figma </p>
+                                <p className="icon-text"> Next </p>
                                 </div>
                             </Col>
+
+
+                            <Col md={4} className="about-skills-col-wrapper">
+                                <div className="about-skills-col">
+                                    <div className="icon-wrapper">
+                                        <img src={tailwind} alt="web-design-icon" />
+                                    </div>
+                                
+                                    <p className="icon-text"> Tailwind </p>
+                                </div>
+                            </Col>
+
+                            <Col md={4} className="about-skills-col-wrapper">
+                                <div className="about-skills-col">
+                                    <div className="icon-wrapper">
+                                        <img src={bootstrap} alt="web-design-icon" />
+                                    </div>
+                                
+                                <p className="icon-text"> Bootstrap </p>
+                                </div>
+                            </Col>
+
+
+                            <Col 
+                                md={4} 
+                                className="about-skills-col-wrapper"
+                                >
+                                <div className="about-skills-col">
+                                    <div className="icon-wrapper">
+                                        <img src={html_css} alt="web-design-icon" />
+                                    </div>
+                                    <p className="icon-text"> HTML & CSS </p>
+                                </div>
+                            </Col>
+
+
+
                         </Row>
                         <div className="about-btn-holder" >
                             <a href="../../../../resume.pdf" downlaod='reasat-montasir.pdf'>

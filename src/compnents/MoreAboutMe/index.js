@@ -85,13 +85,21 @@ function TabPanel(props) {
         {
             id: 0,
             logo: 'fa-laptop-code',
-            year: '2020 - 2022',
-            degree: 'Consultant (Associate Development)',
-            institution: "ASCII System Ltd.",
-            description: "I started my professional journey here. I had my great times with them and completed and accomplished several projects with success which added a greate revenue for the company."
+            year: '2022 - Currently Working Here',
+            degree: 'Software Engineer',
+            institution: "Dhrubok Infotech Services Ltd",
+            description: "Started here as a Junior Software Engineer. Though my journey isn't that much long here, I have learnt many new things and technlogies here."
         },
         {
             id: 1,
+            logo: 'fa-laptop-code',
+            year: '2020 - 2022',
+            degree: 'Consultant (Associate Development)',
+            institution: "ASCII System Ltd.",
+            description: "I started my professional journey here. I had my great times with them and completed and accomplished several projects with success which added a great revenue for the company."
+        },
+        {
+            id: 2,
             logo: 'fa-laptop-code',
             year: '2019 - 2020',
             degree: 'Internship(Web Development)',
